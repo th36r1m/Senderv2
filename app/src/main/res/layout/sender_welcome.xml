@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/fbutton_color_nephritis"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imgLogo"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_marginTop="60.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:src="@drawable/sendercloud"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:textSize="28.0sp"
+        android:textColor="@color/white"
+        android:id="@+id/logoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip"
+        android:text="Sender Cloud"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:textSize="20.0sp"
+        android:textColor="@color/white"
+        android:id="@+id/newUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dip"
+        android:paddingBottom="10dip"
+        android:text="New User Registration"
+        android:layout_below="@id/logoText"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/userName"
+            android:background="@color/white"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/userPassword"
+            android:background="@color/white"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/userPasswordVerify"
+            android:background="@color/white"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:hint="VERIFY PASSWORD"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeActionId="@+id/edittext_action_signup"
+            android:imeActionLabel="@string/signup"
+            android:imeOptions="actionUnspecified"/>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/loginBtn"
+                android:background="@color/color_blue"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Already a User?"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/joinBtn"
+                android:background="@color/color_blue"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="JOIN"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20.0dip"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="@color/white"
+            android:id="@+id/builderBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anton"/>
+
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="@color/white"
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xor Technology"/>
+    </LinearLayout>
+</RelativeLayout>
