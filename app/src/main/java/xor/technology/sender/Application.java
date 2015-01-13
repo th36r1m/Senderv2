@@ -16,7 +16,7 @@ public class Application extends android.app.Application {
         Parse.enableLocalDatastore(this);
 
         // Initialize the Parse SDK
-        Parse.initialize(this, "pmzCI82rDohpV5cn7V71anYrvZ5XCblvINOPvjmG", "IxIGhpQLhRyDhcowuAnIiTUMZ8dZcJIzrWgeDyLB");
+        Parse.initialize(this, "SECRET_KEY", "SECRET_KEY");
 
         // Specify an Activity to handle all pushes by default.
         PushService.setDefaultPushCallback(this, SenderMain.class);
